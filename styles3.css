@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+#header{
+    background-color: #000;
+    height: 46px;
+    width: 100%;
+    top: 0;
+    position: fixed;
+}
+.navbar{
+    display: flex;
+    /* position: absolute; */
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navbar > li{
+    display: inline-block;
+    list-style: none;
+}
+.navbar li{
+    position: relative;
+}
+.navbar li:hover .nav{
+    display: block;
+}
+.navbar li a{
+    line-height: 46px;
+    padding: 0 26px;
+    text-decoration: none;
+    display: block;
+}
+.navbar > li > a{
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar > li:hover > a, 
+.navbar .nav li:hover, .navbar .navnav li:hover{
+    background-color: #ccc;
+    color: #000;
+}
+.navbar .nav{
+    display: none;
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+    position: absolute;
+    text-decoration: none;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.navbar .nav a{
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}.nav li{
+    list-style: none;
+}
+.nav .navnav{
+    display: none;
+    min-width: 160px;
+    top: 0;
+    left: 100%;
+    position: absolute;
+    text-decoration: none;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.navbar .nav li:hover .navnav{
+    display: block;
+}
+
+#content{
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/public/images/anh-gai-xinh-cuoi-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
